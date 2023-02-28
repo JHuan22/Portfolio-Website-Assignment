@@ -1,0 +1,38 @@
+<!--
+  Name: Jin Huang
+  StudentID: 301020707
+-->
+<% include ../partials/header.ejs %>
+
+<!--Main Nav Navigation-->
+<% include ../partials/main_nav.ejs %>
+<div class="container">
+  <div class="row">
+    <div class="offset-md-3 col-md-6">
+      <form class="form" method="POST">
+        <div class="form-group">
+          <label for="nameTextField">Name</label>
+          <input type="text" class="form-control" id="nameTextField" placeholder="Enter the Name" name="name" required>
+
+          <label for="nameTextField">Business</label>
+          <input type="text" class="form-control" id="authorTextField" placeholder="Enter the Business" name="author" required>
+
+          <label for="nameTextField">Age</label>
+          <input type="text" class="form-control" id="publishedTextField" placeholder="Enter the Age" name="published" required>
+
+          <label for="nameTextField">Job description</label>
+          <textarea type="text" class="form-control" id="descriptionTextArea" placeholder="Enter the Job Description" name="description" required></textarea>
+
+          <label for="nameTextField">Price per service</label>
+          <input type="number" class="form-control" id="priceTextField" placeholder="Enter the price per service" name="price" required>
+
+          <button class="btn-primary" type="submit"><i class="fas fa-edit"></i>submit</button>
+          <a href="/booklist" class="btn btn-warning"><i class="fas fa-undo"></i>cancel</a>
+
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<% include ../partials/bottom_nav.ejs %>
+<% include ../partials/footer.ejs %>
